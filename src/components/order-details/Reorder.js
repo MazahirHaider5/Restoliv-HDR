@@ -24,9 +24,12 @@ const Reorder = ({ orderData, orderZoneId }) => {
     const { cartList } = useSelector((state) => state.cart)
     const dispatch = useDispatch()
     let location = undefined;
-    if (typeof window !== "undefined") {
-        location = localStorage.getItem("location");
-    }
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            location = localStorage.getItem("location");
+        }
+    }, []);
+
     const { mutate: removeCartMutate } = useDeleteAllCartItem();
     const { mutate: reorderAddToCartMutate, isLoading: addToCartLoading } = useReorderAddToCart();
     const orderItemId = () => {
@@ -260,8 +263,8 @@ const Reorder = ({ orderData, orderZoneId }) => {
                             item_id: rItem?.id,
                             price: itemsBasePrice,
                             quantity: similar?.[0]?.quantity,
-                            variation_options:[]?.concat(...getSimilarVariations(rItem.variations, similar?.[0]?.variation)?.map((variation) => {
-                                return  variation.values
+                            variation_options: []?.concat(...getSimilarVariations(rItem.variations, similar?.[0]?.variation)?.map((variation) => {
+                                return variation.values
                                     ?.filter(item => item.isSelected)
                                     ?.map(item => item.option_id);
 

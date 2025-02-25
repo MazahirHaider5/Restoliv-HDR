@@ -168,7 +168,7 @@ const SignInPage = ({
     } = useMutation('sign-in', AuthApi.signIn)
 
     const formSubmitHandler = (values) => {
-        const newValues = { ...values, guest_id: guestId }
+        const newValues = { login_type:"manual",email_or_phone:values?.phone,field_type:'phone',password:values?.password }
         loginMutation(newValues, {
             onSuccess: async (response) => {
                 if (global?.customer_verification) {
@@ -182,7 +182,7 @@ const SignInPage = ({
                         setMainToken(response)
                     }
                 } else {
-                    handleTokenAfterSignIn(response)
+                    handleTokenAfterSignIn(response)    
 
                 }
             },

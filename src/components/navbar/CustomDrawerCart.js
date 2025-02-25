@@ -116,7 +116,7 @@ const CustomDrawerCart = () => {
                                     >
                                         <span
                                             style={{
-                                                color: '#EF7822',
+                                                color: '#00add4',
                                                 fontWeight: 'bold',
                                             }}
                                         >

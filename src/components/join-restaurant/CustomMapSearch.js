@@ -6,11 +6,11 @@ import SearchIcon from '@mui/icons-material/Search';
 
 const CssTextField = styled(TextField)(({ theme, border }) => ({
     '& label.Mui-focused': {
-        color: '#EF7822',
+        color: '#00add4',
         background: '#fff',
     },
     '& .MuiInput-underline:after': {
-        borderBottomColor: '#EF7822',
+        borderBottomColor: '#00add4',
         background: '#fff',
     },
     '& .MuiOutlinedInput-notchedOutline': {
@@ -30,14 +30,14 @@ const CssTextField = styled(TextField)(({ theme, border }) => ({
         fontWeight:"400 !important",
         border: border ? border : '',
         '& fieldset': {
-            borderColor: '#EF7822',
+            borderColor: '#00add4',
         },
         '&:hover fieldset': {
-            borderColor: '#EF7822',
+            borderColor: '#00add4',
             border: `1px solid ${border}`,
         },
         '&.Mui-focused fieldset': {
-            borderColor: '#EF7822',
+            borderColor: '#00add4',
         },
     },
 }))

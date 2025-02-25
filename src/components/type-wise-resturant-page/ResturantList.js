@@ -15,7 +15,7 @@ const ResturantList = ({ restaurantType }) => {
     const { global } = useSelector((state) => state.globalSettings)
     const restaurantCoverUrl = global?.base_urls?.restaurant_cover_photo_url
     const [type, setType] = useState('all')
-    const orangeColor = '#EF7822'
+    const orangeColor = '#00add4'
     const orangeColor2 = '#6b43ff'
     const PrimaryButton = styled(Button)(({ theme }) => ({
         color: '#fff',

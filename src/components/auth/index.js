@@ -1,5 +1,5 @@
 import { Modal, Box, IconButton, useTheme, Stack } from '@mui/material'
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import SignInPage from './sign-in'
 import SignUpPage from './sign-up'
 import { useDispatch, useSelector } from "react-redux";
@@ -53,9 +53,15 @@ const AuthModal = ({
         }
     )
     let zoneid = undefined;
-    if (typeof window !== "undefined") {
-        zoneid = localStorage.getItem("zoneid");
-    }
+    
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+           zoneid = localStorage.getItem("zoneid");
+        }
+      }, []);
+    // if (typeof window !== "undefined") {
+    //     zoneid = localStorage.getItem("zoneid");
+    // }
     const onSuccessHandler = (res) => {
         dispatch(setWishList(res))
     }

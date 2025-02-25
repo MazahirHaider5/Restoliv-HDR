@@ -28,20 +28,20 @@ const style = {
 }
 const CssTextField = styled(TextField)({
     '& label.Mui-focused': {
-        color: '#EF7822',
+        color: '#00add4',
     },
     '& .MuiInput-underline:after': {
-        borderBottomColor: '#EF7822',
+        borderBottomColor: '#00add4',
     },
     '& .MuiOutlinedInput-root': {
         '& fieldset': {
-            borderColor: '#EF7822',
+            borderColor: '#00add4',
         },
         '&:hover fieldset': {
-            borderColor: '#EF7822',
+            borderColor: '#00add4',
         },
         '&.Mui-focused fieldset': {
-            borderColor: '#EF7822',
+            borderColor: '#00add4',
         },
     },
 })

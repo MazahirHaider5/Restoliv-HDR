@@ -4,6 +4,8 @@ import { english } from './en'
 import { bengali } from './bn'
 import { arabic } from './ar'
 import { spanish } from './es'
+import { french } from './fr'
+
 
 // the translations
 // (tip move them in a JSON file and import them,
@@ -20,6 +22,9 @@ const resources = {
     },
     es: {
         translation: spanish,
+    },
+    fr: {
+        translation: french,
     },
 }
 

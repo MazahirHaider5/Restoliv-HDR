@@ -85,6 +85,7 @@ const SettingPage = () => {
         window.location.reload()
     }
     const handleLanguage = (ln) => {
+        console.log("handleLanguage",ln)
         dispatch(setLanguage(ln?.languageCode))
         dispatch(setCountryCode(ln?.countryCode))
         localStorage.setItem('language', ln?.languageCode)

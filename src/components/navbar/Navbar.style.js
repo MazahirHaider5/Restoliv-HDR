@@ -64,7 +64,7 @@ export const SearchProduct = styled(Paper)(({ theme, borderColor }) => ({
     background: '#F3F2F2',
     borderRadius: '30px',
     marginTop: '15px',
-    borderColor: '#EF7822',
+    borderColor: '#00add4',
     p: '2px 4px',
     display: 'flex',
     alignItems: 'center',

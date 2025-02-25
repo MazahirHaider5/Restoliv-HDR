@@ -299,7 +299,7 @@ export const SearchIconWrapper = styled('div')(
 export const StyledInputBase = styled(InputBase)(({ theme, width }) => ({
     color: 'inherit',
     width: '120px',
-    border: '2px solid #EF7822',
+    border: '2px solid #00add4',
     padding: '5px 0',
     marginLeft: '5px',
     borderRadius: '5px',

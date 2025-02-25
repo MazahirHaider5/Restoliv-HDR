@@ -21,7 +21,7 @@ export default function SearchResult({ searchValue, count, foodOrRestaurant }) {
                    <Typography sx={{ textAlign: 'center' }}>
                        {t("Search result for")}{' '}
                        <Typography  component="span" color={theme.palette.primary.main}>"{searchValue?searchValue:"item"}"</Typography>{' '}
-                       <Typography component="span" cstyle={{ color: '#EF7822' }}>{count}{' '}</Typography>
+                       <Typography component="span" cstyle={{ color: '#00add4' }}>{count}{' '}</Typography>
                        {foodOrRestaurant === 'products' ? t('foods') : t('restaurants')}{' '}
                        {' '}
                    </Typography>

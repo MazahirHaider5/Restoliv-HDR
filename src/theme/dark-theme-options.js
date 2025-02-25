@@ -14,7 +14,7 @@ const neutral = {
     1200: '#e1e6e6',
     1400: 'rgba(56, 52, 52, 0.8)',
     1500: 'rgba(239, 120, 34, 0.6)',
-    1600: '#EF78224D',
+    1600: '#00add44D',
     1700: '#192238',
     1800: '#1C1919',
 }
@@ -114,9 +114,9 @@ const pending = {
 }
 const whiteContainer = {
     main: '#F9FAFC',
-    light: '#EF7822',
+    light: '#00add4',
     dark: '#6b43ff',
-    contrastText: '#EF7822',
+    contrastText: '#00add4',
 }
 const customColor = {
     one: '#FF5E00',

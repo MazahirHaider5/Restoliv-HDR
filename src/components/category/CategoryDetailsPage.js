@@ -76,9 +76,12 @@ const CategoryDetailsPage = ({
         setCategoryId(id);
     }, [childesData, id]);
     let languageDirection = undefined;
-    if (typeof window !== "undefined") {
-        languageDirection = localStorage.getItem("direction");
-    }
+     useEffect(() => {
+        if (typeof window !== "undefined") {
+            languageDirection = localStorage.getItem("direction");
+        }
+          }, []);
+   
     const handleDropClick = (event) => {
         setAnchorEl(event.currentTarget);
     };

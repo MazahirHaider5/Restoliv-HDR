@@ -13,9 +13,9 @@ import { CustomStackFullWidth } from '../../../styled-components/CustomStyles.st
 
 // export const AddButton = styled(Button)(({ theme }) => ({
 //     // color: 'white',
-//     // background:'#EF7822',
+//     // background:'#00add4',
 
-//     // sx={{background:'#EF7822', color:'white', width:100, height:30}}
+//     // sx={{background:'#00add4', color:'white', width:100, height:30}}
 //     [theme.breakpoints.up('xs')]: {
 //         width: '100px',
 //         height: '30.04px',

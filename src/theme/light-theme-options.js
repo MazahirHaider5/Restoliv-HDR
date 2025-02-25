@@ -12,7 +12,7 @@ const neutral = {
     1000: '#141313',
     1100: '#FBFBFB',
     1200: '#4B566B',
-    1300: '#EF78224D',
+    1300: '#00add44D',
     1400: 'rgba(255, 255, 255, 0.8)',
     1500: 'rgba(239, 120, 34, 0.3)',
     1600: '#FFEBDD',
@@ -52,7 +52,7 @@ const background = {
 const newsletterBG = '#2287FD'
 
 const divider = '#E6E8F0'
-// main: '#EF7822',
+// main: '#00add4',
 // secondary main: '#6b43ff',
 const primary = {
     main: '#6b43ff',
@@ -72,9 +72,9 @@ const secondary = {
 }
 const whiteContainer = {
     main: '#F9FAFC',
-    light: '#EF7822',
+    light: '#00add4',
     dark: '#6b43ff',
-    contrastText: '#EF7822',
+    contrastText: '#00add4',
 }
 const whiteText = {
     main: '#FFFFFF',
@@ -150,7 +150,7 @@ export const lightThemeOptions = {
                 root: {
                     color: '#FFFFFF',
                     '&.MuiButton-text': {
-                        color: '#EF7822',
+                        color: '#00add4',
                     },
                 },
             },

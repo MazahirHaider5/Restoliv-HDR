@@ -131,8 +131,9 @@ const SignUpPage = ({
 
     const formSubmitHandler = (values) => {
         const signUpData = {
-            f_name: values.f_name,
-            l_name: values.l_name,
+            name: values.f_name +" "+values.l_name,
+            // f_name: values.f_name,
+            // l_name: values.l_name,
             email: values.email,
             phone: values.phone,
             password: values.password,

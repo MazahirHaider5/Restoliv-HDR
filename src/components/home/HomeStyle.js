@@ -52,7 +52,7 @@ export const HomeTextTypography = styled(Typography)(({ theme }) => ({
 export const PopularRestaurantCard = styled(Card)(({ theme }) => ({
     margin: "20px 0",
     padding: "30px",
-    // border: '.5px solid #ef7822',
+    // border: '.5px solid #00add4',
     boxShadow: `${theme.palette.mode === "light" &&
     "0px 0px 2px rgba(239, 120, 34, 0.1),0px 6px 12px rgba(239, 120, 34, 0.08)"
     }`,
