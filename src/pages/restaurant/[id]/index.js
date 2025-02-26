@@ -15,29 +15,16 @@ const index = ({ restaurantData, configData }) => {
     const dispatch = useDispatch();
 
     const { restaurant_zone_id } = router.query
-      
-    // const origin =
-    //     typeof window !== 'undefined' && window.location.origin
-    //         ? window.location.origin
-    //         : ''
-    let zoneId =undefined
+    const origin =
+        typeof window !== 'undefined' && window.location.origin
+            ? window.location.origin
+            : ''
+    let zoneId = undefined
+    if (typeof window !== 'undefined') {
+        zoneId = localStorage.getItem('zoneid')
 
-    useEffect(()=>{
-        if (typeof window !== 'undefined') {
-            try {
-                zoneId = localStorage.getItem('zoneid');
-            } catch (error) {
-                console.error('LocalStorage error:', error);
-            }
-        }
-    },[])
-   
-    
-    // if (typeof window !== 'undefined') {
-    //     zoneId = localStorage.getItem('zoneid')
-
-    //     //hostname = window.location.hostnam
-    // }
+        //hostname = window.location.hostnam
+    }
     useEffect(() => {
         dispatch(setGlobalSettings(configData))
     }, [])
@@ -45,14 +32,13 @@ const index = ({ restaurantData, configData }) => {
     useEffect(() => {
 
         if (configData) {
-            if (configData?.maintenance_mode) {
+            if (configData.maintenance_mode) {
                 router.push('/maintenance');
                 //return;
             }
             // dispatch(setGlobalSettings(configData));
         }
     }, [configData, router]);
-    
     useEffect(() => {
         if (!zoneId) {
             localStorage.setItem(
@@ -65,7 +51,7 @@ const index = ({ restaurantData, configData }) => {
     return (
         <>
             <Meta
-                title={`${restaurantData?.meta_title ?? restaurantData?.name
+                title={`${restaurantData?.meta_title ?? restaurantData.name
                     } - ${configData?.business_name}`}
                 ogImage={`${configData?.base_urls?.restaurant_image_url}/${restaurantData?.meta_image}`}
                 description={restaurantData?.meta_description}
