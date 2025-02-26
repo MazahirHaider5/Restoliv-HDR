@@ -32,7 +32,6 @@ const index = ({ restaurantData, configData }) => {
         }
     },[])
    
-    
     // if (typeof window !== 'undefined') {
     //     zoneId = localStorage.getItem('zoneid')
 
