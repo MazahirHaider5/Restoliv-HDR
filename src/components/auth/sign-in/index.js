@@ -383,8 +383,10 @@ const SignInPage = ({
                                             color: alpha(theme.palette.error.main, 0.8),
                                         }}
                                     >
-                                    Forgot passworduuuuuuuhdhdgflskhgfkl?
+
+                                    Forgot password?
                                         {t('Forgot password?')}
+
                                     </Typography>
                                 </CustomStackFullWidth>
                             </CustomStackFullWidth>

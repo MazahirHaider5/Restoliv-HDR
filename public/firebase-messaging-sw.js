@@ -5,7 +5,8 @@ importScripts(
     'https://www.gstatic.com/firebasejs/9.13.0/firebase-messaging-compat.js'
 )
 firebase?.initializeApp({
-  apiKey: "AIzaSyBhjyeVEayrX8NZBGOWVjUlaSAf5k1rop0",
+    apiKey: "AIzaSyBhjyeVEayrX8NZBGOWVjUlaSAf5k1rop0",
+
     authDomain: "restoliv-7c16f.firebaseapp.com",
     projectId: "restoliv-7c16f",
     storageBucket: "restoliv-7c16f.firebasestorage.app",
