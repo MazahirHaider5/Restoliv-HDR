@@ -15,15 +15,7 @@ const firebaseConfig = {
     appId: "1:1033834088012:web:276a0112246b51bd4656e9",
     measurementId: "G-ZLPPL4DVEV"
   };
-// const firebaseConfig = {
-//     apiKey: "AIzaSyAT1Ff4lEwLNdaGpjDgK49sXMfavz5HqQ4",
-//     authDomain: "ammart-e9ef3.firebaseapp.com",
-//     projectId: "ammart-e9ef3",
-//     storageBucket: "ammart-e9ef3.firebasestorage.app",
-//     messagingSenderId: "1002134161719",
-//     appId: "1:1002134161719:web:8487de29401b45912272b2",
-//     measurementId: "G-SQZQZD9J2X"
-//   };
+
 const firebaseApp = !getApps().length ? initializeApp(firebaseConfig) : getApp()
 const messaging = (async () => {
     try {

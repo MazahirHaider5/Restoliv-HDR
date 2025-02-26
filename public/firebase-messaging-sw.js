@@ -6,6 +6,7 @@ importScripts(
 )
 firebase?.initializeApp({
     apiKey: "AIzaSyBhjyeVEayrX8NZBGOWVjUlaSAf5k1rop0",
+
     authDomain: "restoliv-7c16f.firebaseapp.com",
     projectId: "restoliv-7c16f",
     storageBucket: "restoliv-7c16f.firebasestorage.app",
@@ -13,6 +14,7 @@ firebase?.initializeApp({
     appId: "1:1033834088012:web:276a0112246b51bd4656e9",
     measurementId: "G-ZLPPL4DVEV"
 })
+
 
 // Retrieve firebase messaging
 const messaging = firebase?.messaging()
