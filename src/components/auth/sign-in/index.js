@@ -384,7 +384,6 @@ const SignInPage = ({
                                         }}
                                     >
 
-                                    Forgot password?
                                         {t('Forgot password?')}
 
                                     </Typography>
